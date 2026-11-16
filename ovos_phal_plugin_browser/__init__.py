@@ -23,7 +23,12 @@ then, or if the user says no, the layer gets the browser's time zone, so
 clocks and timers are right from the start.
 
 Power, factory reset and language (ovos-PHAL-plugin-system) are in
-phal_system.py; connectivity, sensors and the camera in phal_device.py.
+system.py; connectivity, sensors and the camera in device.py; the kiosk
+(full screen, screen on, install as an app) in kiosk.py; local only
+(nothing leaves the device) in local_only.py. Their bus messages are
+hardware-neutral, so another PHAL plugin can answer the same ones on other
+hardware and the skills that send them (ovos-skill-kiosk,
+ovos-skill-guardian) work there too.
 """
 import os
 import json
@@ -37,6 +42,8 @@ from ovos_plugin_manager.phal import PHALPlugin
 from ovos_utils.log import LOG
 
 from .device import DeviceMixin
+from .kiosk import KioskMixin
+from .local_only import LocalOnlyMixin
 from .system import SystemMixin
 
 try:
@@ -45,20 +52,23 @@ except ImportError:  # pragma: no cover
     JsonConfigXDG = None
 
 
-class BrowserPHAL(SystemMixin, DeviceMixin, PHALPlugin):
+class BrowserPHAL(SystemMixin, DeviceMixin, KioskMixin, LocalOnlyMixin, PHALPlugin):
     """PHAL for a browser tab: volume, location, power, connectivity,
     sensors and camera, each with the bus contract of the plugin a device
-    uses for it."""
+    uses for it; plus kiosk and local only."""
 
-    def __init__(self, bus=None, config=None, post=None):
+    def __init__(self, bus=None, config=None, post=None, reload_speech=None):
         """
         Args:
             bus: the OVOS bus
             config: the plugin's PHAL config section (default_volume)
             post: callable(dict) that hands a state change to the page
+            reload_speech: callable() that makes the next sentence use a
+                changed STT/TTS (local only)
         """
         super().__init__(bus=bus, name="ovos-phal-plugin-browser", config=config or {})
         self._post = post or (lambda change: None)
+        self.reload_speech = reload_speech
         self.settings = (JsonConfigXDG(self.name, subfolder="OpenVoiceOS")
                          if JsonConfigXDG else {})
         if self.settings.get("first_boot", True):
@@ -68,6 +78,7 @@ class BrowserPHAL(SystemMixin, DeviceMixin, PHALPlugin):
             self._store()
         self._system_start()
         self._device_start()
+        self._local_only_start()
         for topic, handler in self._handlers().items():
             self.bus.on(topic, handler)
         self._report()  # the page starts at the stored level
@@ -87,6 +98,8 @@ class BrowserPHAL(SystemMixin, DeviceMixin, PHALPlugin):
             "ovos.ipgeo.update": self.on_location_update,
             **self._system_handlers(),
             **self._device_handlers(),
+            **self._kiosk_handlers(),
+            **self._local_only_handlers(),
         }
 
     # --- the "mixer" ----------------------------------------------------
@@ -239,11 +252,13 @@ class BrowserPHAL(SystemMixin, DeviceMixin, PHALPlugin):
 _plugin = None
 
 
-def start(bus, post):
-    """Load the plugin on the bus; `post(str)` sends JSON to the page."""
+def start(bus, post, reload_speech=None):
+    """Load the plugin on the bus; `post(str)` sends JSON to the page,
+    `reload_speech()` applies a changed STT/TTS (local only)."""
     global _plugin
     conf = Configuration().get("PHAL", {}).get("ovos-phal-plugin-browser", {})
-    _plugin = BrowserPHAL(bus=bus, config=conf, post=lambda change: post(json.dumps(change)))
+    _plugin = BrowserPHAL(bus=bus, config=conf, post=lambda change: post(json.dumps(change)),
+                          reload_speech=reload_speech)
     return _plugin
 
 
