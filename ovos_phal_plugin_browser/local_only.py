@@ -79,13 +79,17 @@ class LocalOnlyMixin:
             cfg = Configuration()
             online = {"stt": cfg.get("stt", {}).get("module"),
                       "tts": cfg.get("tts", {}).get("module")}
+            # nothing to fall back on while a model downloads: wait for it
             patch = {KEY: {"enabled": True, "online": online},
-                     "stt": {"module": LOCAL_STT}, "tts": {"module": LOCAL_TTS}}
+                     "stt": {"module": LOCAL_STT, LOCAL_STT: {"wait_for_download": True}},
+                     "tts": {"module": LOCAL_TTS, LOCAL_TTS: {"wait_for_download": True}}}
         elif not on and state.get("enabled"):
             online = state.get("online") or {}
             patch = {KEY: {"enabled": False, "online": {}},
-                     "stt": {"module": online.get("stt") or ONLINE_STT},
-                     "tts": {"module": online.get("tts") or ONLINE_TTS}}
+                     "stt": {"module": online.get("stt") or ONLINE_STT,
+                             LOCAL_STT: {"wait_for_download": False}},
+                     "tts": {"module": online.get("tts") or ONLINE_TTS,
+                             LOCAL_TTS: {"wait_for_download": False}}}
         if patch:
             conf = _user_conf()
             conf.merge(patch)
