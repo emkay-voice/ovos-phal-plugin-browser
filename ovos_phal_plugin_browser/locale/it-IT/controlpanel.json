@@ -1,0 +1,8 @@
+{
+ "browserdevice.title": "Dispositivo browser",
+ "browserdevice.intro": "La scheda del browser è il dispositivo: volume, posizione, fotocamera e alimentazione. Con queste impostazioni parte la scheda.",
+ "browserdevice.camera": "Lascia che le skill usino la fotocamera",
+ "browserdevice.camera.hint": "Il browser chiede comunque prima di aprire la fotocamera.",
+ "browserdevice.volume": "Volume all'avvio",
+ "browserdevice.volume.hint": "Solo la prima volta; poi la scheda mantiene il volume lasciato."
+}

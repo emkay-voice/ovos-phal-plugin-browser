@@ -1,0 +1,8 @@
+{
+ "browserdevice.title": "Dispositivo navegador",
+ "browserdevice.intro": "A lapela do navegador é o dispositivo: volume, localización, cámara e enerxía. Con estes axustes comeza a lapela.",
+ "browserdevice.camera": "Deixar que as skills usen a cámara",
+ "browserdevice.camera.hint": "O navegador segue a preguntar antes de abrir a cámara.",
+ "browserdevice.volume": "Volume ao comezar",
+ "browserdevice.volume.hint": "Só a primeira vez; despois a lapela garda o volume que deixaches."
+}

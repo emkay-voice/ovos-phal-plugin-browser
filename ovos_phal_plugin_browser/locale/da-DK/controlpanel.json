@@ -1,0 +1,8 @@
+{
+ "browserdevice.title": "Browserenhed",
+ "browserdevice.intro": "Browserfanen er enheden: dens lydstyrke, placering, kamera og strøm. Disse indstillinger er det, fanen starter med.",
+ "browserdevice.camera": "Lad skills bruge kameraet",
+ "browserdevice.camera.hint": "Browseren spørger stadig, før kameraet åbner.",
+ "browserdevice.volume": "Lydstyrke ved start",
+ "browserdevice.volume.hint": "Kun første gang; derefter beholder fanen den lydstyrke, du forlod den med."
+}

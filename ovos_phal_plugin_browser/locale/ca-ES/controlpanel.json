@@ -1,0 +1,8 @@
+{
+ "browserdevice.title": "Dispositiu navegador",
+ "browserdevice.intro": "La pestanya del navegador és el dispositiu: volum, ubicació, càmera i energia. Amb aquests ajustos comença la pestanya.",
+ "browserdevice.camera": "Deixar que les skills facin servir la càmera",
+ "browserdevice.camera.hint": "El navegador encara pregunta abans d'obrir la càmera.",
+ "browserdevice.volume": "Volum en començar",
+ "browserdevice.volume.hint": "Només la primera vegada; després la pestanya conserva el volum que hi vau deixar."
+}

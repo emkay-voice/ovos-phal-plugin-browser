@@ -1,0 +1,8 @@
+{
+ "browserdevice.title": "Browserapparaat",
+ "browserdevice.intro": "Het browsertabblad is het apparaat: volume, locatie, camera en stroom. Met deze instellingen begint het tabblad.",
+ "browserdevice.camera": "Skills de camera laten gebruiken",
+ "browserdevice.camera.hint": "De browser vraagt het nog steeds voordat de camera opent.",
+ "browserdevice.volume": "Volume bij het starten",
+ "browserdevice.volume.hint": "Alleen de eerste keer; daarna houdt het tabblad het volume dat je achterliet."
+}

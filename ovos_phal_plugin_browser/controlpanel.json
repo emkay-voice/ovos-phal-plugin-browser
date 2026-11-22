@@ -1,0 +1,39 @@
+{
+ "controlpanel": 1,
+ "id": "browser-device",
+ "title": "browserdevice.title",
+ "group": "device",
+ "order": 40,
+ "bus": "ovos.browser-device.",
+ "blocks": [
+  {
+   "type": "text",
+   "text": "browserdevice.intro"
+  },
+  {
+   "type": "form",
+   "save": {
+    "config": "PHAL.ovos-phal-plugin-browser"
+   },
+   "fields": [
+    {
+     "name": "camera",
+     "label": "browserdevice.camera",
+     "type": "checkbox",
+     "hint": "browserdevice.camera.hint",
+     "default": true
+    },
+    {
+     "name": "default_volume",
+     "label": "browserdevice.volume",
+     "type": "slider",
+     "hint": "browserdevice.volume.hint",
+     "min": 0,
+     "max": 100,
+     "step": 5,
+     "default": 75
+    }
+   ]
+  }
+ ]
+}
