@@ -4,11 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ovos-phal-plugin-browser"
-version = "0.1.0a3"
+version = "0.1.0a4"
 description = "OpenVoiceOS PHAL plugin: the browser tab as the device (volume, location, power, sensors, camera)"
 readme = "README.md"
 license = {text = "Apache-2.0"}
 authors = [{name = "emkay-voice"}]
+maintainers = [{name = "Andreas Lorensen"}]
 requires-python = ">=3.10"
 keywords = ["ovos", "openvoiceos", "plugin", "phal", "browser", "volume", "geolocation", "pyodide", "emkay"]
 classifiers = [
