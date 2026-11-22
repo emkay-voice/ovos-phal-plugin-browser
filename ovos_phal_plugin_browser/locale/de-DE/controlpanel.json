@@ -1,0 +1,8 @@
+{
+ "browserdevice.title": "Browser-Gerät",
+ "browserdevice.intro": "Der Browser-Tab ist das Gerät: Lautstärke, Standort, Kamera und Strom. Mit diesen Einstellungen startet der Tab.",
+ "browserdevice.camera": "Skills die Kamera nutzen lassen",
+ "browserdevice.camera.hint": "Der Browser fragt trotzdem, bevor die Kamera öffnet.",
+ "browserdevice.volume": "Lautstärke beim Start",
+ "browserdevice.volume.hint": "Nur beim ersten Mal; danach behält der Tab die zuletzt eingestellte Lautstärke."
+}

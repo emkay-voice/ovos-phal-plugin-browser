@@ -1,0 +1,8 @@
+{
+ "browserdevice.title": "Dispositivo navegador",
+ "browserdevice.intro": "La pestaña del navegador es el dispositivo: su volumen, ubicación, cámara y energía. Con estos ajustes empieza la pestaña.",
+ "browserdevice.camera": "Dejar que las skills usen la cámara",
+ "browserdevice.camera.hint": "El navegador sigue preguntando antes de abrir la cámara.",
+ "browserdevice.volume": "Volumen al empezar",
+ "browserdevice.volume.hint": "Solo la primera vez; después la pestaña guarda el volumen que dejó."
+}

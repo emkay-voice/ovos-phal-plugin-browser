@@ -1,0 +1,8 @@
+{
+ "browserdevice.title": "Dispositivo navegador",
+ "browserdevice.intro": "A aba do navegador é o dispositivo: volume, localização, câmera e energia. Com estas configurações a aba começa.",
+ "browserdevice.camera": "Deixar as skills usarem a câmera",
+ "browserdevice.camera.hint": "O navegador ainda pergunta antes de abrir a câmera.",
+ "browserdevice.volume": "Volume ao iniciar",
+ "browserdevice.volume.hint": "Só na primeira vez; depois a aba guarda o volume que você deixou."
+}

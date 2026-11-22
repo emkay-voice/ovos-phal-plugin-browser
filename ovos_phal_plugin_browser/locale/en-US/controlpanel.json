@@ -1,0 +1,8 @@
+{
+ "browserdevice.title": "Browser device",
+ "browserdevice.intro": "The browser tab is the device: its volume, location, camera and power. These settings are what the tab starts with.",
+ "browserdevice.camera": "Let skills use the camera",
+ "browserdevice.camera.hint": "The browser still asks before the camera opens.",
+ "browserdevice.volume": "Volume to start with",
+ "browserdevice.volume.hint": "The first time only; after that the tab keeps the volume you left it at."
+}

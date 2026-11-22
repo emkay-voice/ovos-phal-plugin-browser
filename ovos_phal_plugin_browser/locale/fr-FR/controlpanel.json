@@ -1,0 +1,8 @@
+{
+ "browserdevice.title": "Appareil navigateur",
+ "browserdevice.intro": "L'onglet du navigateur est l'appareil : volume, position, caméra et alimentation. Ces réglages sont ceux avec lesquels l'onglet démarre.",
+ "browserdevice.camera": "Laisser les skills utiliser la caméra",
+ "browserdevice.camera.hint": "Le navigateur demande toujours avant d'ouvrir la caméra.",
+ "browserdevice.volume": "Volume au démarrage",
+ "browserdevice.volume.hint": "La première fois seulement ; ensuite l'onglet garde le volume que vous avez laissé."
+}

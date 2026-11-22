@@ -1,0 +1,8 @@
+{
+ "browserdevice.title": "Nabigatzaile-gailua",
+ "browserdevice.intro": "Nabigatzailearen fitxa da gailua: bolumena, kokapena, kamera eta energia. Ezarpen hauekin hasten da fitxa.",
+ "browserdevice.camera": "Utzi skillei kamera erabiltzen",
+ "browserdevice.camera.hint": "Nabigatzaileak galdetu egiten du kamera ireki aurretik.",
+ "browserdevice.volume": "Hasierako bolumena",
+ "browserdevice.volume.hint": "Lehen aldian bakarrik; gero fitxak utzi zenuen bolumena gordetzen du."
+}

@@ -55,6 +55,9 @@ other hardware can answer the same ones, and the skills work there too.
 `PHAL.ovos-phal-plugin-browser` in `mycroft.conf`; nothing needs setting. The
 volume is kept in `~/.config/OpenVoiceOS/ovos-phal-plugin-browser.json`.
 
+In the [control panel](https://github.com/OpenVoiceOS/ovos-control-panel) the plugin has a page under Device for `camera` and
+`default_volume`, saved in `PHAL.ovos-phal-plugin-browser` (`controlpanel.json`).
+
 ## License
 
 Apache-2.0

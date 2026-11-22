@@ -1,0 +1,8 @@
+{
+ "browserdevice.title": "Dispositivo navegador",
+ "browserdevice.intro": "O separador do navegador é o dispositivo: volume, localização, câmara e energia. Com estas definições começa o separador.",
+ "browserdevice.camera": "Deixar as skills usar a câmara",
+ "browserdevice.camera.hint": "O navegador pergunta sempre antes de abrir a câmara.",
+ "browserdevice.volume": "Volume ao iniciar",
+ "browserdevice.volume.hint": "Só da primeira vez; depois o separador guarda o volume que deixou."
+}
