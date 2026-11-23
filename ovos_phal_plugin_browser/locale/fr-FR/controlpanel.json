@@ -4,5 +4,22 @@
  "browserdevice.camera": "Laisser les skills utiliser la caméra",
  "browserdevice.camera.hint": "Le navigateur demande toujours avant d'ouvrir la caméra.",
  "browserdevice.volume": "Volume au démarrage",
- "browserdevice.volume.hint": "La première fois seulement ; ensuite l'onglet garde le volume que vous avez laissé."
+ "browserdevice.volume.hint": "La première fois seulement ; ensuite l'onglet garde le volume que vous avez laissé.",
+ "browserdevice.sensors.intro": "La batterie, le réseau, l’écran, le stockage, la mémoire et le processeur sont toujours signalés : le navigateur les donne sans demander. Les capteurs ci-dessous demandent sur l’appareil, chacun est donc désactivé jusqu’à ce que vous l’activiez.",
+ "browserdevice.sensors": "Capteurs qui demandent",
+ "browserdevice.sensors.now": "Capteurs maintenant",
+ "browserdevice.sensors.tap": "Quelqu’un doit toucher « Autoriser » sur l’écran de l’appareil.",
+ "browserdevice.s.position": "Position, suivie",
+ "browserdevice.s.position.hint": "Où se trouve l’appareil, au fil du temps. Le navigateur demande.",
+ "browserdevice.s.presence": "Quelqu’un devant l’écran",
+ "browserdevice.s.presence.hint": "Si quelqu’un utilise l’appareil et si l’écran est verrouillé (Chrome). Le navigateur demande.",
+ "browserdevice.s.mic_level": "Niveau du micro",
+ "browserdevice.s.mic_level.hint": "Le bruit dans la pièce, en dB. Le navigateur demande le micro.",
+ "browserdevice.s.motion": "Mouvement",
+ "browserdevice.s.motion.hint": "Accélération, rotation et champ magnétique. Demande sur iPhone et iPad.",
+ "browserdevice.state.on": "Activé",
+ "browserdevice.state.waiting": "Attend un toucher sur l’appareil",
+ "browserdevice.state.denied": "Refusé dans le navigateur",
+ "browserdevice.state.absent": "Absent de ce navigateur",
+ "browserdevice.state.off": "Désactivé"
 }

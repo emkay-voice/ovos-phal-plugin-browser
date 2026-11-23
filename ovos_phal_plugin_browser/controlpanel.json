@@ -34,6 +34,160 @@
      "default": 75
     }
    ]
+  },
+  {
+   "type": "text",
+   "text": "browserdevice.sensors.intro"
+  },
+  {
+   "type": "form",
+   "heading": "browserdevice.sensors",
+   "save": {
+    "config": "PHAL.ovos-phal-plugin-browser.sensors",
+    "reload": "ovos.browser-device.reload"
+   },
+   "fields": [
+    {
+     "name": "position",
+     "label": "browserdevice.s.position",
+     "hint": "browserdevice.s.position.hint",
+     "type": "checkbox",
+     "default": false
+    },
+    {
+     "name": "presence",
+     "label": "browserdevice.s.presence",
+     "hint": "browserdevice.s.presence.hint",
+     "type": "checkbox",
+     "default": false
+    },
+    {
+     "name": "mic_level",
+     "label": "browserdevice.s.mic_level",
+     "hint": "browserdevice.s.mic_level.hint",
+     "type": "checkbox",
+     "default": false
+    },
+    {
+     "name": "motion",
+     "label": "browserdevice.s.motion",
+     "hint": "browserdevice.s.motion.hint",
+     "type": "checkbox",
+     "default": false
+    }
+   ]
+  },
+  {
+   "type": "status",
+   "heading": "browserdevice.sensors.now",
+   "query": "ovos.browser-device.status",
+   "refresh": 5,
+   "rows": [
+    {
+     "label": "browserdevice.s.position",
+     "text": "browserdevice.state.on",
+     "when": "position_on"
+    },
+    {
+     "label": "browserdevice.s.position",
+     "text": "browserdevice.state.waiting",
+     "when": "position_waiting"
+    },
+    {
+     "label": "browserdevice.s.position",
+     "text": "browserdevice.state.denied",
+     "when": "position_denied"
+    },
+    {
+     "label": "browserdevice.s.position",
+     "text": "browserdevice.state.absent",
+     "when": "position_absent"
+    },
+    {
+     "label": "browserdevice.s.position",
+     "text": "browserdevice.state.off",
+     "when": "position_off"
+    },
+    {
+     "label": "browserdevice.s.presence",
+     "text": "browserdevice.state.on",
+     "when": "presence_on"
+    },
+    {
+     "label": "browserdevice.s.presence",
+     "text": "browserdevice.state.waiting",
+     "when": "presence_waiting"
+    },
+    {
+     "label": "browserdevice.s.presence",
+     "text": "browserdevice.state.denied",
+     "when": "presence_denied"
+    },
+    {
+     "label": "browserdevice.s.presence",
+     "text": "browserdevice.state.absent",
+     "when": "presence_absent"
+    },
+    {
+     "label": "browserdevice.s.presence",
+     "text": "browserdevice.state.off",
+     "when": "presence_off"
+    },
+    {
+     "label": "browserdevice.s.mic_level",
+     "text": "browserdevice.state.on",
+     "when": "mic_level_on"
+    },
+    {
+     "label": "browserdevice.s.mic_level",
+     "text": "browserdevice.state.waiting",
+     "when": "mic_level_waiting"
+    },
+    {
+     "label": "browserdevice.s.mic_level",
+     "text": "browserdevice.state.denied",
+     "when": "mic_level_denied"
+    },
+    {
+     "label": "browserdevice.s.mic_level",
+     "text": "browserdevice.state.absent",
+     "when": "mic_level_absent"
+    },
+    {
+     "label": "browserdevice.s.mic_level",
+     "text": "browserdevice.state.off",
+     "when": "mic_level_off"
+    },
+    {
+     "label": "browserdevice.s.motion",
+     "text": "browserdevice.state.on",
+     "when": "motion_on"
+    },
+    {
+     "label": "browserdevice.s.motion",
+     "text": "browserdevice.state.waiting",
+     "when": "motion_waiting"
+    },
+    {
+     "label": "browserdevice.s.motion",
+     "text": "browserdevice.state.denied",
+     "when": "motion_denied"
+    },
+    {
+     "label": "browserdevice.s.motion",
+     "text": "browserdevice.state.absent",
+     "when": "motion_absent"
+    },
+    {
+     "label": "browserdevice.s.motion",
+     "text": "browserdevice.state.off",
+     "when": "motion_off"
+    },
+    {
+     "text": "browserdevice.sensors.tap",
+     "when": "any_waiting"
+    }
+   ]
   }
  ]
 }

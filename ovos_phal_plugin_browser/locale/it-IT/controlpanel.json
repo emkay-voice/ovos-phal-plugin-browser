@@ -4,5 +4,22 @@
  "browserdevice.camera": "Lascia che le skill usino la fotocamera",
  "browserdevice.camera.hint": "Il browser chiede comunque prima di aprire la fotocamera.",
  "browserdevice.volume": "Volume all'avvio",
- "browserdevice.volume.hint": "Solo la prima volta; poi la scheda mantiene il volume lasciato."
+ "browserdevice.volume.hint": "Solo la prima volta; poi la scheda mantiene il volume lasciato.",
+ "browserdevice.sensors.intro": "Batteria, rete, schermo, archiviazione, memoria e CPU sono sempre riportati: il browser li dà senza chiedere. I sensori qui sotto chiedono sul dispositivo, quindi ognuno è spento finché non lo accendi.",
+ "browserdevice.sensors": "Sensori che chiedono",
+ "browserdevice.sensors.now": "Sensori ora",
+ "browserdevice.sensors.tap": "Qualcuno deve toccare «Consenti» sullo schermo del dispositivo.",
+ "browserdevice.s.position": "Posizione, seguita",
+ "browserdevice.s.position.hint": "Dove si trova il dispositivo, nel tempo. Il browser chiede.",
+ "browserdevice.s.presence": "Qualcuno allo schermo",
+ "browserdevice.s.presence.hint": "Se qualcuno usa il dispositivo e se lo schermo è bloccato (Chrome). Il browser chiede.",
+ "browserdevice.s.mic_level": "Livello del microfono",
+ "browserdevice.s.mic_level.hint": "Quanto è rumorosa la stanza, in dB. Il browser chiede il microfono.",
+ "browserdevice.s.motion": "Movimento",
+ "browserdevice.s.motion.hint": "Accelerazione, rotazione e campo magnetico. Chiede su iPhone e iPad.",
+ "browserdevice.state.on": "Acceso",
+ "browserdevice.state.waiting": "In attesa di un tocco sul dispositivo",
+ "browserdevice.state.denied": "Non consentito nel browser",
+ "browserdevice.state.absent": "Non presente in questo browser",
+ "browserdevice.state.off": "Spento"
 }

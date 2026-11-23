@@ -4,5 +4,22 @@
  "browserdevice.camera": "Deixar as skills usarem a câmera",
  "browserdevice.camera.hint": "O navegador ainda pergunta antes de abrir a câmera.",
  "browserdevice.volume": "Volume ao iniciar",
- "browserdevice.volume.hint": "Só na primeira vez; depois a aba guarda o volume que você deixou."
+ "browserdevice.volume.hint": "Só na primeira vez; depois a aba guarda o volume que você deixou.",
+ "browserdevice.sensors.intro": "Bateria, rede, tela, armazenamento, memória e CPU são sempre informados: o navegador os dá sem perguntar. Os sensores abaixo perguntam no dispositivo, então cada um fica desligado até você ligá-lo.",
+ "browserdevice.sensors": "Sensores que perguntam",
+ "browserdevice.sensors.now": "Sensores agora",
+ "browserdevice.sensors.tap": "Alguém precisa tocar em \"Permitir\" na tela do dispositivo.",
+ "browserdevice.s.position": "Posição, acompanhada",
+ "browserdevice.s.position.hint": "Onde o dispositivo está, ao longo do tempo. O navegador pergunta.",
+ "browserdevice.s.presence": "Alguém na tela",
+ "browserdevice.s.presence.hint": "Se alguém está usando o dispositivo e se a tela está bloqueada (Chrome). O navegador pergunta.",
+ "browserdevice.s.mic_level": "Nível do microfone",
+ "browserdevice.s.mic_level.hint": "Quão barulhento está o ambiente, em dB. O navegador pede o microfone.",
+ "browserdevice.s.motion": "Movimento",
+ "browserdevice.s.motion.hint": "Aceleração, rotação e campo magnético. Pergunta no iPhone e iPad.",
+ "browserdevice.state.on": "Ligado",
+ "browserdevice.state.waiting": "Esperando um toque no dispositivo",
+ "browserdevice.state.denied": "Não permitido no navegador",
+ "browserdevice.state.absent": "Não existe neste navegador",
+ "browserdevice.state.off": "Desligado"
 }
