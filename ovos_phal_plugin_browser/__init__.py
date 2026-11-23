@@ -23,7 +23,8 @@ then, or if the user says no, the layer gets the browser's time zone, so
 clocks and timers are right from the start.
 
 Power, factory reset and language (ovos-PHAL-plugin-system) are in
-system.py; connectivity, sensors and the camera in device.py; the kiosk
+system.py; connectivity, sensors and the camera in device.py, and the
+sensors that ask the user first (off until turned on) in sensors.py; the kiosk
 (full screen, screen on, install as an app) in kiosk.py; local only
 (nothing leaves the device) in local_only.py. Their bus messages are
 hardware-neutral, so another PHAL plugin can answer the same ones on other
@@ -44,6 +45,7 @@ from ovos_utils.log import LOG
 from .device import DeviceMixin
 from .kiosk import KioskMixin
 from .local_only import LocalOnlyMixin
+from .sensors import SensorsMixin
 from .system import SystemMixin
 
 try:
@@ -52,7 +54,7 @@ except ImportError:  # pragma: no cover
     JsonConfigXDG = None
 
 
-class BrowserPHAL(SystemMixin, DeviceMixin, KioskMixin, LocalOnlyMixin, PHALPlugin):
+class BrowserPHAL(SystemMixin, DeviceMixin, SensorsMixin, KioskMixin, LocalOnlyMixin, PHALPlugin):
     """PHAL for a browser tab: volume, location, power, connectivity,
     sensors and camera, each with the bus contract of the plugin a device
     uses for it; plus kiosk and local only."""
@@ -78,6 +80,7 @@ class BrowserPHAL(SystemMixin, DeviceMixin, KioskMixin, LocalOnlyMixin, PHALPlug
             self._store()
         self._system_start()
         self._device_start()
+        self._sensors_start()
         self._local_only_start()
         for topic, handler in self._handlers().items():
             self.bus.on(topic, handler)
@@ -98,6 +101,7 @@ class BrowserPHAL(SystemMixin, DeviceMixin, KioskMixin, LocalOnlyMixin, PHALPlug
             "ovos.ipgeo.update": self.on_location_update,
             **self._system_handlers(),
             **self._device_handlers(),
+            **self._sensors_handlers(),
             **self._kiosk_handlers(),
             **self._local_only_handlers(),
         }

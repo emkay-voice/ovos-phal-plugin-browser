@@ -4,5 +4,22 @@
  "browserdevice.camera": "Skills de camera laten gebruiken",
  "browserdevice.camera.hint": "De browser vraagt het nog steeds voordat de camera opent.",
  "browserdevice.volume": "Volume bij het starten",
- "browserdevice.volume.hint": "Alleen de eerste keer; daarna houdt het tabblad het volume dat je achterliet."
+ "browserdevice.volume.hint": "Alleen de eerste keer; daarna houdt het tabblad het volume dat je achterliet.",
+ "browserdevice.sensors.intro": "Batterij, netwerk, scherm, opslag, geheugen en CPU worden altijd gemeld: de browser geeft ze zonder te vragen. De sensoren hieronder vragen het op het apparaat, dus elk staat uit tot je hem aanzet.",
+ "browserdevice.sensors": "Sensoren die vragen",
+ "browserdevice.sensors.now": "Sensoren nu",
+ "browserdevice.sensors.tap": "Iemand moet op het scherm van het apparaat op ‘Toestaan’ tikken.",
+ "browserdevice.s.position": "Positie, gevolgd",
+ "browserdevice.s.position.hint": "Waar het apparaat is, door de tijd. De browser vraagt het.",
+ "browserdevice.s.presence": "Iemand bij het scherm",
+ "browserdevice.s.presence.hint": "Of iemand het apparaat gebruikt en of het scherm vergrendeld is (Chrome). De browser vraagt het.",
+ "browserdevice.s.mic_level": "Microfoonniveau",
+ "browserdevice.s.mic_level.hint": "Hoe luid de kamer is, in dB. De browser vraagt om de microfoon.",
+ "browserdevice.s.motion": "Beweging",
+ "browserdevice.s.motion.hint": "Versnelling, draaiing en magnetisch veld. Vraagt het op iPhone en iPad.",
+ "browserdevice.state.on": "Aan",
+ "browserdevice.state.waiting": "Wacht op een tik op het apparaat",
+ "browserdevice.state.denied": "Niet toegestaan in de browser",
+ "browserdevice.state.absent": "Niet in deze browser",
+ "browserdevice.state.off": "Uit"
 }

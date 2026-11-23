@@ -4,5 +4,22 @@
  "browserdevice.camera": "Lad skills bruge kameraet",
  "browserdevice.camera.hint": "Browseren spørger stadig, før kameraet åbner.",
  "browserdevice.volume": "Lydstyrke ved start",
- "browserdevice.volume.hint": "Kun første gang; derefter beholder fanen den lydstyrke, du forlod den med."
+ "browserdevice.volume.hint": "Kun første gang; derefter beholder fanen den lydstyrke, du forlod den med.",
+ "browserdevice.sensors.intro": "Batteri, netværk, skærm, lager, hukommelse og CPU meldes altid: browseren fortæller dem uden at spørge. Sensorerne herunder spørger på enheden, så hver er slået fra, til du slår den til.",
+ "browserdevice.sensors": "Sensorer der spørger",
+ "browserdevice.sensors.now": "Sensorer nu",
+ "browserdevice.sensors.tap": "Nogen skal trykke “Tillad” på enhedens skærm.",
+ "browserdevice.s.position": "Position, fulgt",
+ "browserdevice.s.position.hint": "Hvor enheden er, over tid. Browseren spørger.",
+ "browserdevice.s.presence": "Nogen ved skærmen",
+ "browserdevice.s.presence.hint": "Om nogen bruger enheden, og om skærmen er låst (Chrome). Browseren spørger.",
+ "browserdevice.s.mic_level": "Mikrofonniveau",
+ "browserdevice.s.mic_level.hint": "Hvor højt der er i rummet, i dB. Browseren spørger om mikrofonen.",
+ "browserdevice.s.motion": "Bevægelse",
+ "browserdevice.s.motion.hint": "Acceleration, rotation og magnetfelt. Spørger på iPhone og iPad.",
+ "browserdevice.state.on": "Til",
+ "browserdevice.state.waiting": "Venter på et tryk på enheden",
+ "browserdevice.state.denied": "Ikke tilladt i browseren",
+ "browserdevice.state.absent": "Findes ikke i denne browser",
+ "browserdevice.state.off": "Fra"
 }

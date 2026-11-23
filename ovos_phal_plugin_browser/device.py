@@ -68,6 +68,8 @@ class DeviceMixin:
             self.sensor_reading(**data)
         elif event == "picture":
             self.on_picture(**data)
+        elif event == "sensor_state":   # a sensor that asks: on, waiting, denied, absent, off
+            self.on_sensor_state(str(data.get("name")), str(data.get("state")))
         elif event == "camera":
             # the page's answer to camera_check; as the plugin: a pong when
             # there is a camera, to the ping that asked (or to all, on load)

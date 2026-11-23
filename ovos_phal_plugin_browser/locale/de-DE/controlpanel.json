@@ -4,5 +4,22 @@
  "browserdevice.camera": "Skills die Kamera nutzen lassen",
  "browserdevice.camera.hint": "Der Browser fragt trotzdem, bevor die Kamera öffnet.",
  "browserdevice.volume": "Lautstärke beim Start",
- "browserdevice.volume.hint": "Nur beim ersten Mal; danach behält der Tab die zuletzt eingestellte Lautstärke."
+ "browserdevice.volume.hint": "Nur beim ersten Mal; danach behält der Tab die zuletzt eingestellte Lautstärke.",
+ "browserdevice.sensors.intro": "Akku, Netzwerk, Bildschirm, Speicher, Arbeitsspeicher und CPU werden immer gemeldet: der Browser nennt sie ohne zu fragen. Die Sensoren unten fragen auf dem Gerät, darum ist jeder aus, bis du ihn einschaltest.",
+ "browserdevice.sensors": "Sensoren, die fragen",
+ "browserdevice.sensors.now": "Sensoren jetzt",
+ "browserdevice.sensors.tap": "Jemand muss auf dem Bildschirm des Geräts auf „Erlauben“ tippen.",
+ "browserdevice.s.position": "Position, verfolgt",
+ "browserdevice.s.position.hint": "Wo das Gerät ist, über die Zeit. Der Browser fragt.",
+ "browserdevice.s.presence": "Jemand am Bildschirm",
+ "browserdevice.s.presence.hint": "Ob jemand das Gerät benutzt und ob der Bildschirm gesperrt ist (Chrome). Der Browser fragt.",
+ "browserdevice.s.mic_level": "Mikrofonpegel",
+ "browserdevice.s.mic_level.hint": "Wie laut es im Raum ist, in dB. Der Browser fragt nach dem Mikrofon.",
+ "browserdevice.s.motion": "Bewegung",
+ "browserdevice.s.motion.hint": "Beschleunigung, Drehung und Magnetfeld. Fragt auf iPhone und iPad.",
+ "browserdevice.state.on": "An",
+ "browserdevice.state.waiting": "Wartet auf ein Tippen am Gerät",
+ "browserdevice.state.denied": "Im Browser nicht erlaubt",
+ "browserdevice.state.absent": "In diesem Browser nicht vorhanden",
+ "browserdevice.state.off": "Aus"
 }

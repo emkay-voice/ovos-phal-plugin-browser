@@ -4,5 +4,22 @@
  "browserdevice.camera": "Let skills use the camera",
  "browserdevice.camera.hint": "The browser still asks before the camera opens.",
  "browserdevice.volume": "Volume to start with",
- "browserdevice.volume.hint": "The first time only; after that the tab keeps the volume you left it at."
+ "browserdevice.volume.hint": "The first time only; after that the tab keeps the volume you left it at.",
+ "browserdevice.sensors.intro": "Battery, network, screen, storage, memory and CPU are always reported: the browser tells them without asking. The sensors below ask on the device, so each is off until you turn it on.",
+ "browserdevice.sensors": "Sensors that ask",
+ "browserdevice.sensors.now": "Sensors now",
+ "browserdevice.sensors.tap": "Someone must tap “Allow” on the device's screen.",
+ "browserdevice.s.position": "Position, followed",
+ "browserdevice.s.position.hint": "Where the device is, over time. The browser asks.",
+ "browserdevice.s.presence": "Someone at the screen",
+ "browserdevice.s.presence.hint": "Whether someone uses the device, and whether its screen is locked (Chrome). The browser asks.",
+ "browserdevice.s.mic_level": "Microphone level",
+ "browserdevice.s.mic_level.hint": "How loud the room is, in dB. The browser asks for the microphone.",
+ "browserdevice.s.motion": "Motion",
+ "browserdevice.s.motion.hint": "Acceleration, rotation and the magnetic field. Asks on iPhone and iPad.",
+ "browserdevice.state.on": "On",
+ "browserdevice.state.waiting": "Waiting for a tap on the device",
+ "browserdevice.state.denied": "Not allowed in the browser",
+ "browserdevice.state.absent": "Not in this browser",
+ "browserdevice.state.off": "Off"
 }

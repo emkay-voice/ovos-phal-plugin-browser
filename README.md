@@ -41,7 +41,7 @@ or `{"request": "local_only", "enabled": bool}` (show or hide the shield).
 `reload_speech()` is called after local only changed the STT/TTS modules. The page
 answers through the plugin's methods: `on_position(lat, lon, error)`,
 `on_picture(id, jpeg_b64, error)` and `on_page_event(event, data)` for
-`"online"`, `"sensor"`, `"camera"` and `"picture"`.
+`"online"`, `"sensor"`, `"sensor_state"`, `"camera"` and `"picture"`.
 
 Emkay's page side is [`web/device.js`](https://github.com/emkay-voice/emkay/blob/main/web/device.js),
 and the wiring is in [`worker_main.py`](https://github.com/emkay-voice/emkay/blob/main/py/emkay_mobile/worker_main.py).
@@ -57,6 +57,27 @@ volume is kept in `~/.config/OpenVoiceOS/ovos-phal-plugin-browser.json`.
 
 In the [control panel](https://github.com/OpenVoiceOS/ovos-control-panel) the plugin has a page under Device for `camera` and
 `default_volume`, saved in `PHAL.ovos-phal-plugin-browser` (`controlpanel.json`).
+
+### Sensors that ask
+
+The sensors whose readings the browser only gives after asking the user are
+off until turned on in `PHAL.ovos-phal-plugin-browser.sensors` (the same page
+has a switch for each):
+
+| Sensor | Readings | Asks |
+| --- | --- | --- |
+| `position` | `position_location` ("lat,lon", with latitude, longitude, gps_accuracy) | yes |
+| `presence` | `presence_user_active`, `presence_screen_locked` (Idle Detection, Chrome) | yes |
+| `mic_level` | `microphone_level` (dBFS, every 5 s) | yes, for the microphone |
+| `motion` | `acceleration_magnitude`, `rotation_magnitude`, `magnetic_field_magnitude` | on iOS (and there also for moving/still, position and compass) |
+
+Off means off: the page never touches a sensor that is off, so the browser never asks.
+Turned on, the browser asks on the device. A browser only asks after a tap, so a sensor
+turned on from somewhere else (another control panel, Home Assistant) waits, with a
+"Tap to allow" on the screen. Each sensor's state (`on`, `waiting`, `denied`, `absent`
+in this browser, `off`) is answered on `ovos.browser-device.status`. The page is asked
+with `{"request": "sensors", "on": {sensor: bool}}` at the start and whenever the setting
+changes, and reports `sensor_state` events back.
 
 ## License
 

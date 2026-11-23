@@ -4,5 +4,22 @@
  "browserdevice.camera": "Utzi skillei kamera erabiltzen",
  "browserdevice.camera.hint": "Nabigatzaileak galdetu egiten du kamera ireki aurretik.",
  "browserdevice.volume": "Hasierako bolumena",
- "browserdevice.volume.hint": "Lehen aldian bakarrik; gero fitxak utzi zenuen bolumena gordetzen du."
+ "browserdevice.volume.hint": "Lehen aldian bakarrik; gero fitxak utzi zenuen bolumena gordetzen du.",
+ "browserdevice.sensors.intro": "Bateria, sarea, pantaila, biltegiratzea, memoria eta PUZa beti jakinarazten dira: nabigatzaileak galdetu gabe ematen ditu. Beheko sentsoreek gailuan galdetzen dute, beraz bakoitza itzalita dago zuk piztu arte.",
+ "browserdevice.sensors": "Galdetzen duten sentsoreak",
+ "browserdevice.sensors.now": "Sentsoreak orain",
+ "browserdevice.sensors.tap": "Norbaitek «Baimendu» sakatu behar du gailuaren pantailan.",
+ "browserdevice.s.position": "Kokapena, jarraitua",
+ "browserdevice.s.position.hint": "Non dagoen gailua, denboran zehar. Nabigatzaileak galdetzen du.",
+ "browserdevice.s.presence": "Norbait pantailaren aurrean",
+ "browserdevice.s.presence.hint": "Norbaitek gailua erabiltzen duen eta pantaila blokeatuta dagoen (Chrome). Nabigatzaileak galdetzen du.",
+ "browserdevice.s.mic_level": "Mikrofonoaren maila",
+ "browserdevice.s.mic_level.hint": "Gela zenbat zarata dagoen, dB-tan. Nabigatzaileak mikrofonoa eskatzen du.",
+ "browserdevice.s.motion": "Mugimendua",
+ "browserdevice.s.motion.hint": "Azelerazioa, biraketa eta eremu magnetikoa. iPhone eta iPad-en galdetzen du.",
+ "browserdevice.state.on": "Piztuta",
+ "browserdevice.state.waiting": "Gailuan sakatze baten zain",
+ "browserdevice.state.denied": "Ez dago baimenduta nabigatzailean",
+ "browserdevice.state.absent": "Ez dago nabigatzaile honetan",
+ "browserdevice.state.off": "Itzalita"
 }

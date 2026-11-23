@@ -4,5 +4,22 @@
  "browserdevice.camera": "Deixar que les skills facin servir la càmera",
  "browserdevice.camera.hint": "El navegador encara pregunta abans d'obrir la càmera.",
  "browserdevice.volume": "Volum en començar",
- "browserdevice.volume.hint": "Només la primera vegada; després la pestanya conserva el volum que hi vau deixar."
+ "browserdevice.volume.hint": "Només la primera vegada; després la pestanya conserva el volum que hi vau deixar.",
+ "browserdevice.sensors.intro": "La bateria, la xarxa, la pantalla, l’emmagatzematge, la memòria i la CPU s’informen sempre: el navegador els dona sense preguntar. Els sensors de sota pregunten al dispositiu, així que cadascun està apagat fins que l’encenguis.",
+ "browserdevice.sensors": "Sensors que pregunten",
+ "browserdevice.sensors.now": "Sensors ara",
+ "browserdevice.sensors.tap": "Algú ha de tocar «Permet» a la pantalla del dispositiu.",
+ "browserdevice.s.position": "Posició, seguida",
+ "browserdevice.s.position.hint": "On és el dispositiu, al llarg del temps. El navegador pregunta.",
+ "browserdevice.s.presence": "Algú davant la pantalla",
+ "browserdevice.s.presence.hint": "Si algú fa servir el dispositiu i si la pantalla està bloquejada (Chrome). El navegador pregunta.",
+ "browserdevice.s.mic_level": "Nivell del micròfon",
+ "browserdevice.s.mic_level.hint": "Quant soroll hi ha a la sala, en dB. El navegador demana el micròfon.",
+ "browserdevice.s.motion": "Moviment",
+ "browserdevice.s.motion.hint": "Acceleració, rotació i camp magnètic. Pregunta a l’iPhone i l’iPad.",
+ "browserdevice.state.on": "Encès",
+ "browserdevice.state.waiting": "Esperant un toc al dispositiu",
+ "browserdevice.state.denied": "No permès al navegador",
+ "browserdevice.state.absent": "No és en aquest navegador",
+ "browserdevice.state.off": "Apagat"
 }
