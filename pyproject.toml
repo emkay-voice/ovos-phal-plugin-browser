@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ovos-phal-plugin-browser"
-version = "0.1.0a6"
+version = "0.1.0a7"
 description = "OpenVoiceOS PHAL plugin: the browser tab as the device (volume, location, power, sensors, camera)"
 readme = "README.md"
 license = {text = "Apache-2.0"}

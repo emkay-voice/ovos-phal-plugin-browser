@@ -4,6 +4,11 @@
  "title": "browserdevice.title",
  "group": "device",
  "order": 40,
+ "provides": [
+  "volume",
+  "power",
+  "system"
+ ],
  "bus": "ovos.browser-device.",
  "blocks": [
   {
