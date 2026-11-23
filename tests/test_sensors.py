@@ -48,3 +48,11 @@ def test_status_for_the_panel():
     st = answers[0]
     assert st["position_waiting"] and st["any_waiting"] and st["presence_off"]
     assert st["states"]["position"] == "waiting"
+
+
+def test_a_patch_on_the_bus_reaches_the_page():
+    p = Plugin({})
+    p.conf = {"sensors": {"motion": True}}
+    with p.patched():
+        p.bus.emit(Message("configuration.patch", {"config": {}}))
+    assert p.posted[-1]["on"]["motion"] is True

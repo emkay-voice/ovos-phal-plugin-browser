@@ -35,7 +35,11 @@ class SensorsMixin:
         return {
             BUS + "reload": self.send_sensors,
             BUS + "status": self.handle_sensors_status,
+            # a change to the settings, whichever way it comes: a file
+            # change (updated) or a change on the bus (patch, as the control
+            # panel and Home Assistant send it; ovos-config applies it first)
             "configuration.updated": self._on_config_changed,
+            "configuration.patch": self._on_config_changed,
         }
 
     def _sensors_start(self):
